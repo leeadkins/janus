@@ -91,6 +91,9 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 " Sudo to write
 cmap w!! w !sudo tee % >/dev/null
 
+" let Ack search all files
+let g:ackprg="ack -H --nocolor --nogroup --column --all"
+
 " Unimpaired configuration
 " Bubble single lines
 nmap <C-Up> [e
