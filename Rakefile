@@ -192,6 +192,18 @@ vim_plugin_task "molokai" do
   sh "curl http://www.vim.org/scripts/download_script.php?src_id=9750 > colors/molokai.vim"
 end
 
+vim_plugin_task "sorcerer" do
+  sh "curl http://www.vim.org/scripts/download_script.php?src_id=14132 > colors/sorcerer.vim"
+end
+
+vim_plugin_task "mustang2" do
+  sh "curl http://www.vim.org/scripts/download_script.php?src_id=11274 > colors/mustang2.vim"
+end
+
+vim_plugin_task "earendel" do
+  sh "curl http://www.vim.org/scripts/download_script.php?src_id=13651 > colors/earendel.vim"
+end
+
 vim_plugin_task "mustasche" do
   sh "curl https://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
 end

@@ -30,11 +30,15 @@ endif
 " Start without the toolbar
 set guioptions-=T
 
+" Start without the scrollbars
+set guioptions-=r
+set guioptions-=L
+
 " Default gui font
 set guifont=Inconsolata:h16
 
 " Default gui color scheme
-color github
+color darkspectrum
 
 " ConqueTerm wrapper
 function StartTerm()
