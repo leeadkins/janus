@@ -106,6 +106,9 @@ vmap <C-Down> ]egv
 set modeline
 set modelines=10
 
+" Highlight cursor line
+set cursorline
+
 " Default color scheme
 color github
 

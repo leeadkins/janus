@@ -147,6 +147,7 @@ vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
 vim_plugin_task "scratch",          "git://github.com/duff/vim-scratch.git"
 vim_plugin_task "gundo",            "git://github.com/sjl/gundo.vim.git"
 vim_plugin_task "jslint",           "git://github.com/brianegan/jslint.vim.git"
+vim_plugin_task "specky",           "git://github.com/vim-scripts/Specky.git"
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
@@ -210,6 +211,10 @@ end
 
 vim_plugin_task "jade" do
   sh "curl https://gist.github.com/raw/707600/903324316a157bb2bdb89c1202a8edec3808ad6d/jade.vim > syntax/jade.vim"
+end
+
+vim_plugin_task "less" do
+  sh "curl https://gist.github.com/raw/161047/fa566b5c8732c32c35ba248b96cc9c5d58e0d971/less.vim > syntax/mustache.vim"
 end
 
 desc "Cleanup all the files"
