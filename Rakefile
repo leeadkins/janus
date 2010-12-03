@@ -142,7 +142,6 @@ vim_plugin_task "zoomwin",          "http://www.vim.org/scripts/download_script.
 vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
 vim_plugin_task "autoclose",        "git://github.com/vim-scripts/AutoClose.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
-vim_plugin_task "github",           "git://github.com/acarapetis/vim-github-theme.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
 vim_plugin_task "scratch",          "git://github.com/duff/vim-scratch.git"
 vim_plugin_task "gundo",            "git://github.com/sjl/gundo.vim.git"
@@ -216,6 +215,10 @@ end
 
 vim_plugin_task "less" do
   sh "curl https://gist.github.com/raw/161047/fa566b5c8732c32c35ba248b96cc9c5d58e0d971/less.vim > syntax/mustache.vim"
+end
+
+vim_plugin_task "github" do
+  sh "curl https://github.com/acarapetis/vim-github-theme/raw/master/github.vim > colors/github.vim"
 end
 
 desc "Cleanup all the files"
