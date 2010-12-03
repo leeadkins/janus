@@ -148,6 +148,7 @@ vim_plugin_task "scratch",          "git://github.com/duff/vim-scratch.git"
 vim_plugin_task "gundo",            "git://github.com/sjl/gundo.vim.git"
 vim_plugin_task "jslint",           "git://github.com/brianegan/jslint.vim.git"
 vim_plugin_task "specky",           "git://github.com/vim-scripts/Specky.git"
+vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"

@@ -102,6 +102,11 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
+" Syntastic stuff
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
 " Use modeline overrides
 set modeline
 set modelines=10
@@ -116,3 +121,5 @@ color github
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+
