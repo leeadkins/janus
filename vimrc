@@ -69,8 +69,8 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
-" less is CSS
-au BufRead,BufNewFile *.less setfiletype css
+" Less CSS
+au BufRead,BufNewFile *.less setfiletype less
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
