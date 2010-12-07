@@ -25,7 +25,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc
 
 " Status bar
 set laststatus=2
-set statusline=%t%y%m%=%{fugitive#statusline()}
+set statusline=%#warningmsg#%{SyntasticStatuslineFlag()}%*%t%y%m%=%{fugitive#statusline()}
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
@@ -103,11 +103,6 @@ nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
-
-" Syntastic stuff
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
 " Use modeline overrides
 set modeline
