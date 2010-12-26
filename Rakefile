@@ -144,16 +144,13 @@ vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
 vim_plugin_task "delimitmate",      "git://github.com/Raimondi/delimitMate.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
-<<<<<<< HEAD
 vim_plugin_task "scratch",          "git://github.com/duff/vim-scratch.git"
 vim_plugin_task "gundo",            "git://github.com/sjl/gundo.vim.git"
 vim_plugin_task "jslint",           "git://github.com/brianegan/jslint.vim.git"
 vim_plugin_task "specky",           "git://github.com/vim-scripts/Specky.git"
 vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
-=======
 vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
 vim_plugin_task "searchfold",       "git://github.com/vim-scripts/searchfold.vim.git"
->>>>>>> f3c0957cab751e15ac3b144226b100a52b60d93c
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"

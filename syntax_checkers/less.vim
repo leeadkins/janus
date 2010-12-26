@@ -14,7 +14,7 @@ if exists("loaded_less_syntax_checker")
 endif
 let loaded_less_syntax_checker = 1
 
-"bail if the user doesnt have the haml binary installed
+"bail if the user doesnt have the lessc binary installed
 if !executable("lessc")
     finish
 endif
@@ -29,7 +29,4 @@ function! SyntaxCheckers_less_GetLocList()
     endif
     return []
 endfunction
-
-" Syntax error on line 18: The line was indented 2 levels deeper than the previous line.
-" ! Syntax Error: on line 475: expected one of ( [ / got : after:
 
