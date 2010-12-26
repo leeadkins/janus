@@ -141,14 +141,19 @@ vim_plugin_task "rails",            "git://github.com/tpope/vim-rails.git"
 vim_plugin_task "rspec",            "git://github.com/taq/vim-rspec.git"
 vim_plugin_task "zoomwin",          "http://www.vim.org/scripts/download_script.php?src_id=9865"
 vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
-vim_plugin_task "autoclose",        "git://github.com/vim-scripts/AutoClose.git"
+vim_plugin_task "delimitmate",      "git://github.com/Raimondi/delimitMate.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
+<<<<<<< HEAD
 vim_plugin_task "scratch",          "git://github.com/duff/vim-scratch.git"
 vim_plugin_task "gundo",            "git://github.com/sjl/gundo.vim.git"
 vim_plugin_task "jslint",           "git://github.com/brianegan/jslint.vim.git"
 vim_plugin_task "specky",           "git://github.com/vim-scripts/Specky.git"
 vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
+=======
+vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
+vim_plugin_task "searchfold",       "git://github.com/vim-scripts/searchfold.vim.git"
+>>>>>>> f3c0957cab751e15ac3b144226b100a52b60d93c
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
@@ -222,11 +227,6 @@ vim_plugin_task "github" do
   sh "curl https://github.com/acarapetis/vim-github-theme/raw/master/github.vim > colors/github.vim"
 end
 
-desc "Cleanup all the files"
-task :clean do
-  rm_rf "tmp"
-end
-
 desc "Update the documentation"
 task :update_docs do
   puts "Updating VIM Documentation..."
@@ -243,7 +243,18 @@ task :link_vimrc do
   end
 end
 
+task :clean do
+  system "git clean -dfx"
+end
+
+task :pull do
+  system "git pull"
+end
+
 task :default => [
   :update_docs,
   :link_vimrc
 ]
+
+task :upgrade => [:clean, :pull, :default]
+
