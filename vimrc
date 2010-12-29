@@ -130,3 +130,4 @@ set directory=~/.vim/backup
 
 " xterm not recognized right by vim
 set term=builtin_ansi
+runtime macros/matchit.vim
