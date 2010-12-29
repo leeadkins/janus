@@ -155,6 +155,7 @@ vim_plugin_task "irblack",          "git://github.com/wgibbs/vim-irblack.git"
 vim_plugin_task "matchit",          "git://github.com/edsono/vim-matchit.git"
 vim_plugin_task "textobj",          "git://github.com/kana/vim-textobj-user.git"
 vim_plugin_task "rubyblock",        "git://github.com/nelstrom/vim-textobj-rubyblock.git"
+vim_plugin_task "netrw",            "git://github.com/vim-scripts/netrw.vim.git"
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
