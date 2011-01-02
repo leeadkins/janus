@@ -33,7 +33,7 @@ set guioptions-=L
 set guifont=Inconsolata:h16
 
 " Default gui color scheme
-color ir_black
+color github
 
 " ConqueTerm wrapper
 function StartTerm()
