@@ -55,7 +55,6 @@ autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 " buffer that's left is the NERDTree buffer
 function s:CloseIfOnlyNerdTreeLeft()
   if exists("t:NERDTreeBufName")
-    echo t:NERDTreeBufName
     if bufwinnr(t:NERDTreeBufName) != -1
       if winnr("$") == 1
         q
@@ -81,8 +80,6 @@ function s:CdIfDirectory(directory)
 
   if explicitDirectory
     wincmd p
-  else
-
   endif
 endfunction
 
@@ -160,6 +157,11 @@ function Remove(file)
   call s:UpdateNERDTree()
 endfunction
 
+function Mkdir(file)
+  execute "!mkdir " . a:file
+  call s:UpdateNERDTree()
+endfunction
+
 function Edit(file)
   if exists("b:NERDTreeRoot")
     wincmd p
@@ -183,6 +185,7 @@ call s:DefineCommand("cd", "ChangeDirectory")
 call s:DefineCommand("touch", "Touch")
 call s:DefineCommand("rm", "Remove")
 call s:DefineCommand("e", "Edit")
+call s:DefineCommand("mkdir", "Mkdir")
 
 " Include user's local vim config
 if filereadable(expand("~/.gvimrc.local"))
