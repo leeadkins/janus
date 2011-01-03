@@ -46,3 +46,13 @@ let g:speckyWindowType = 2
 " Store tmp files
 set backupdir=~/.vimtmp
 set directory=~/.vimtmp
+
+" TwitVim
+let twitvim_login = "USER:PASSWORD"
+let twitvim_enable_ruby = 1
+let twitvim_browser_cmd = "open"
+nnoremap <F6> :FriendsTwitter<cr>
+nnoremap <S-F6> :UserTwitter<cr>
+nnoremap <A-F6> :RepliesTwitter<cr>
+nnoremap <C-F6> :DMTwitter<cr>
+
