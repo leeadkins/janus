@@ -33,7 +33,6 @@ map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
 " Specky mappings
-
 let g:speckyBannerKey = "<C-S>b"
 let g:speckyQuoteSwitcherKey = "<C-S>'"
 let g:speckyRunRdocKey = "<C-S>r"
@@ -48,11 +47,13 @@ set backupdir=~/.vimtmp
 set directory=~/.vimtmp
 
 " TwitVim
-let twitvim_login = "USER:PASSWORD"
-let twitvim_enable_ruby = 1
+let twitvim_login = "julienXX:Jul*twitter"
 let twitvim_browser_cmd = "open"
-nnoremap <F6> :FriendsTwitter<cr>
-nnoremap <S-F6> :UserTwitter<cr>
-nnoremap <A-F6> :RepliesTwitter<cr>
-nnoremap <C-F6> :DMTwitter<cr>
+let twitvim_count = 40
+
+" Gist.vim
+let g:gist_clip_command = 'pbcopy'
+let g:gist_detect_filetype = 1
+let g:gist_show_privates = 1
+let g:gist_open_browser_after_post = 1
 
