@@ -119,15 +119,11 @@ set cursorline
 " Default color scheme
 color desert
 
-" Include user's local vim config
-if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
-endif
-
 "Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
-" xterm not recognized right by vim
-set term=builtin_ansi
-runtime macros/matchit.vim
+" Include user's local vim config
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
