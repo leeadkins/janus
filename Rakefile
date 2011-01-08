@@ -159,6 +159,7 @@ vim_plugin_task "cocoa",            "git://github.com/vim-scripts/cocoa.vim.git"
 vim_plugin_task "ruby_snippets",    "git://github.com/kaichen/vim-snipmate-ruby-snippets.git"
 vim_plugin_task "gist",             "git://github.com/mattn/gist-vim.git"
 vim_plugin_task "ruby_refactoring", "git://github.com/ecomba/vim-ruby-refactoring.git"
+vim_plugin_task "taskpaper",        "git://github.com/davidoc/taskpaper.vim.git"
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
