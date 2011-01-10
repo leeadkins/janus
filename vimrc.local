@@ -57,4 +57,4 @@ map <buffer> <silent> tpd <Plug>ToggleDone
 map <buffer> <silent> tpc <Plug>ShowContext
 map <buffer> <silent> tpa <Plug>ShowAll
 map <buffer> <silent> tpp <Plug>FoldAllProjects
-
+map <f6> :sp ~/Dropbox/SimpleText/Tigerlily.taskpaper<CR>
