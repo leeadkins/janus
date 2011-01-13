@@ -32,6 +32,9 @@ map <C-x> <C-w>c
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
+" Evaluates current line mathematically
+map <C-M> :echo eval(getline('.'))<CR>
+
 " Specky mappings
 let g:speckyBannerKey = "<C-S>b"
 let g:speckyQuoteSwitcherKey = "<C-S>'"
