@@ -102,7 +102,7 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 cmap w!! w !sudo tee % >/dev/null
 
 " let Ack search all files
-let g:ackprg="ack -H --nocolor --nogroup --column --all"
+let g:ackprg="ack -H --nocolor --nogroup --column --all --ignore-dir tmp --ignore-dir coverage --ignore-dir tmp --ignore-dir log"
 
 " Unimpaired configuration
 " Bubble single lines
