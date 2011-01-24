@@ -149,6 +149,14 @@ vim_plugin_task "searchfold",       "git://github.com/vim-scripts/searchfold.vim
 vim_plugin_task "irblack",          "git://github.com/wgibbs/vim-irblack.git"
 vim_plugin_task "vim-coffee-script","git://github.com/kchmck/vim-coffee-script.git"
 
+# Custom plugins
+vim_plugin_task "scratch",          "git://github.com/duff/vim-scratch.git"
+vim_plugin_task "ruby_snippets",    "git://github.com/kaichen/vim-snipmate-ruby-snippets.git"
+vim_plugin_task "gist",             "git://github.com/mattn/gist-vim.git"
+vim_plugin_task "ruby_refactoring", "git://github.com/ecomba/vim-ruby-refactoring.git"
+vim_plugin_task "taskpaper",        "git://github.com/davidoc/taskpaper.vim.git"
+
+
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
   Dir.chdir "ruby/command-t" do
@@ -185,6 +193,16 @@ vim_plugin_task "janus_themes" do
       hi  VertSplit    guibg=#888888
       hi  StatusLine   guibg=#cccccc guifg=#000000
       hi  StatusLineNC guibg=#888888 guifg=#000000
+    VIM
+  end
+  
+  # custom version of ir_black theme
+  File.open(File.expand_path("../colors/ir_black+.vim", __FILE__), "w") do |file|
+    file.puts <<-VIM.gsub(/^      /, "")
+      runtime colors/ir_black.vim
+      let g:colors_name = "ir_black+"
+
+      hi Directory guifg=#6699CC guibg=NONE gui=NONE ctermfg=lightblue ctermbg=NONE cterm=NONE
     VIM
   end
 end
