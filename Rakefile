@@ -161,6 +161,7 @@ vim_plugin_task "cocoa",            "git://github.com/vim-scripts/cocoa.vim.git"
 vim_plugin_task "matchit",          "git://github.com/edsono/vim-matchit.git"
 vim_plugin_task "textobj",          "git://github.com/kana/vim-textobj-user.git"
 vim_plugin_task "rubyblock",        "git://github.com/nelstrom/vim-textobj-rubyblock.git"
+vim_plugin_task "fokus",            "git://github.com/vim-scripts/fokus.git"
 
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
@@ -257,7 +258,7 @@ end
 
 desc "link vimrc to ~/.vimrc"
 task :link_vimrc do
-  %w[ vimrc gvimrc vimrc.local jslintrc ].each do |file|
+  %w[ vimrc gvimrc ].each do |file|
     dest = File.expand_path("~/.#{file}")
     unless File.exist?(dest)
       ln_s(File.expand_path("../#{file}", __FILE__), dest)
