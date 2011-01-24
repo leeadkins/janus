@@ -61,7 +61,7 @@ set guioptions-=r
 set guioptions-=L
 
 " Default gui color scheme
-color ir_black+
+color clouds_midnight
 
 " Default gui font
 set guifont=Inconsolata:h16

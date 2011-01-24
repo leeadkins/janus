@@ -144,22 +144,11 @@ vim_plugin_task "zoomwin",          "http://www.vim.org/scripts/download_script.
 vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
-vim_plugin_task "scratch",          "git://github.com/duff/vim-scratch.git"
-vim_plugin_task "gundo",            "git://github.com/sjl/gundo.vim.git"
 vim_plugin_task "specky",           "git://github.com/vim-scripts/Specky.git"
 vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
 vim_plugin_task "searchfold",       "git://github.com/vim-scripts/searchfold.vim.git"
 vim_plugin_task "irblack",          "git://github.com/wgibbs/vim-irblack.git"
-vim_plugin_task "matchit",          "git://github.com/edsono/vim-matchit.git"
-vim_plugin_task "textobj",          "git://github.com/kana/vim-textobj-user.git"
-vim_plugin_task "rubyblock",        "git://github.com/nelstrom/vim-textobj-rubyblock.git"
-vim_plugin_task "netrw",            "git://github.com/vim-scripts/netrw.vim.git"
-vim_plugin_task "cocoa",            "git://github.com/vim-scripts/cocoa.vim.git"
-vim_plugin_task "ruby_snippets",    "git://github.com/kaichen/vim-snipmate-ruby-snippets.git"
-vim_plugin_task "gist",             "git://github.com/mattn/gist-vim.git"
-vim_plugin_task "ruby_refactoring", "git://github.com/ecomba/vim-ruby-refactoring.git"
-vim_plugin_task "taskpaper",        "git://github.com/davidoc/taskpaper.vim.git"
 vim_plugin_task "vim-coffee-script","git://github.com/kchmck/vim-coffee-script.git"
 
 # Custom plugins
@@ -168,6 +157,10 @@ vim_plugin_task "ruby_snippets",    "git://github.com/kaichen/vim-snipmate-ruby-
 vim_plugin_task "gist",             "git://github.com/mattn/gist-vim.git"
 vim_plugin_task "ruby_refactoring", "git://github.com/ecomba/vim-ruby-refactoring.git"
 vim_plugin_task "taskpaper",        "git://github.com/davidoc/taskpaper.vim.git"
+vim_plugin_task "cocoa",            "git://github.com/vim-scripts/cocoa.vim.git"
+vim_plugin_task "matchit",          "git://github.com/edsono/vim-matchit.git"
+vim_plugin_task "textobj",          "git://github.com/kana/vim-textobj-user.git"
+vim_plugin_task "rubyblock",        "git://github.com/nelstrom/vim-textobj-rubyblock.git"
 
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
@@ -250,6 +243,10 @@ end
 
 vim_plugin_task "github" do
   sh "curl https://github.com/acarapetis/vim-github-theme/raw/master/github.vim > colors/github.vim"
+end
+
+vim_plugin_task "clouds_midnight" do
+  sh "curl https://gist.github.com/raw/793434/d8f79fd5525d45778ec317d3a060d1309a52036e/clouds_midnight.vim > colors/clouds_midnight.vim"
 end
 
 desc "Update the documentation"
