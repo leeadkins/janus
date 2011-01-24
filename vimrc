@@ -1,5 +1,4 @@
 set nocompatible
-let mapleader = ","
 
 set number
 set ruler
@@ -9,7 +8,7 @@ syntax on
 set encoding=utf-8
 
 " Whitespace stuff
-set tw=80
+set nowrap
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -28,7 +27,6 @@ set wildignore+=*.o,*.obj,.git,*.rbc
 
 " Status bar
 set laststatus=2
-set statusline=%#warningmsg#%{SyntasticStatuslineFlag()}%*%t%y%m%=%{fugitive#statusline()}
 
 " Without setting this, ZoomWin restores windows in a way that causes
 " equalalways behavior to be triggered the next time CommandT is used.
@@ -77,9 +75,6 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
-" Less CSS
-au BufRead,BufNewFile *.less setfiletype less
-
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -98,12 +93,6 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
-" Sudo to write
-cmap w!! w !sudo tee % >/dev/null
-
-" let Ack search all files
-let g:ackprg="ack -H --nocolor --nogroup --column --all --ignore-dir tmp --ignore-dir coverage --ignore-dir tmp --ignore-dir log"
-
 " Unimpaired configuration
 " Bubble single lines
 nmap <C-Up> [e
@@ -115,9 +104,6 @@ vmap <C-Down> ]egv
 " Use modeline overrides
 set modeline
 set modelines=10
-
-" Highlight cursor line
-set cursorline
 
 " Default color scheme
 color desert
