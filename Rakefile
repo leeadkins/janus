@@ -144,8 +144,6 @@ vim_plugin_task "zoomwin",          "http://www.vim.org/scripts/download_script.
 vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
-vim_plugin_task "specky",           "git://github.com/vim-scripts/Specky.git"
-vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
 vim_plugin_task "searchfold",       "git://github.com/vim-scripts/searchfold.vim.git"
 vim_plugin_task "irblack",          "git://github.com/wgibbs/vim-irblack.git"
@@ -248,6 +246,9 @@ end
 
 vim_plugin_task "clouds_midnight" do
   sh "curl https://gist.github.com/raw/793434/d8f79fd5525d45778ec317d3a060d1309a52036e/clouds_midnight.vim > colors/clouds_midnight.vim"
+end
+vim_plugin_task "vwilight" do
+  sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
 end
 
 desc "Update the documentation"
