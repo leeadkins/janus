@@ -42,6 +42,10 @@ map <C-x> <C-w>c
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
+map <silent><f3> :NEXTCOLOR<cr>
+map <silent><f2> :PREVCOLOR<cr>
+
+
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
