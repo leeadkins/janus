@@ -250,7 +250,7 @@ vim_plugin_task "clouds_midnight" do
   sh "curl https://gist.github.com/raw/793434/d8f79fd5525d45778ec317d3a060d1309a52036e/clouds_midnight.vim > colors/clouds_midnight.vim"
 end
 vim_plugin_task "vwilight" do
-  sh "curl http://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
+  sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
 end
 
 desc "Update the documentation"
