@@ -230,10 +230,6 @@ vim_plugin_task "earendel" do
   sh "curl http://www.vim.org/scripts/download_script.php?src_id=13651 > colors/earendel.vim"
 end
 
-vim_plugin_task "mustasche" do
-  sh "curl https://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
-end
-
 vim_plugin_task "jade" do
   sh "curl https://gist.github.com/raw/707600/903324316a157bb2bdb89c1202a8edec3808ad6d/jade.vim > syntax/jade.vim"
 end
@@ -249,6 +245,11 @@ end
 vim_plugin_task "clouds_midnight" do
   sh "curl https://gist.github.com/raw/793434/d8f79fd5525d45778ec317d3a060d1309a52036e/clouds_midnight.vim > colors/clouds_midnight.vim"
 end
+
+vim_plugin_task "mustache" do
+  sh "curl http://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
+end
+
 vim_plugin_task "vwilight" do
   sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
 end
