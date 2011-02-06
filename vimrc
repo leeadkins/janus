@@ -75,6 +75,9 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
+" Less CSS
+au BufRead,BufNewFile *.less setfiletype less
+
 " make python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python  set tabstop=4 textwidth=79
 
