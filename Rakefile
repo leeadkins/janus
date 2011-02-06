@@ -162,6 +162,7 @@ vim_plugin_task "matchit",          "git://github.com/edsono/vim-matchit.git"
 vim_plugin_task "textobj",          "git://github.com/kana/vim-textobj-user.git"
 vim_plugin_task "rubyblock",        "git://github.com/nelstrom/vim-textobj-rubyblock.git"
 vim_plugin_task "mac_classic",      "git://github.com/nelstrom/vim-mac-classic-theme.git"
+vim_plugin_task "loremipsum",       "git://github.com/vim-scripts/loremipsum.git"
 
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
