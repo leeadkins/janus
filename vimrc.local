@@ -1,0 +1,4 @@
+" Status bar
+set laststatus=2
+set statusline=%#warningmsg#%{SyntasticStatuslineFlag()}%*%t%y%m%=%{fugitive#statusline()}[%p%%]
+
