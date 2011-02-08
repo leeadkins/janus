@@ -8,6 +8,9 @@ syntax on
 " Set encoding
 set encoding=utf-8
 
+" Share clipboard, all operations such as yy, D, and P work with the clipboard
+set clipboard=unnamed
+
 " Whitespace stuff
 set nowrap
 set tabstop=2
@@ -116,7 +119,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color desert
+color github
 
 " Directories for swp files
 set backupdir=~/.vim/backup
