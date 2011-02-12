@@ -248,7 +248,10 @@ vim_plugin_task "clouds_midnight" do
 end
 
 vim_plugin_task "mustache" do
-  sh "curl http://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
+  sh "curl https://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
+  File.open(File.expand_path('../ftdetect/mustache.vim', __FILE__), 'w') do |file|
+    file << "au BufNewFile,BufRead *.mustache        setf mustache"
+  end
 end
 
 vim_plugin_task "vwilight" do
